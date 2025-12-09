@@ -1,4 +1,4 @@
-# Quiero usar una lista ordenada y encontrar el número deseado
+# Quiero usar una lista ordenada y encontrar el número o nombre deseado
 # en el menor número de iteraciones posibles.
 
 def obtener_numero_deseado(lista, numero):      # Binary_search
@@ -17,6 +17,10 @@ def obtener_numero_deseado(lista, numero):      # Binary_search
 
 lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 
-print(obtener_numero_deseado(lista, 13)) # Me da la posición 12
+print(obtener_numero_deseado(lista, 13)) # Obtengo la posición 12
+print(obtener_numero_deseado(lista, -5)) # Obtengo None
 
-print(obtener_numero_deseado(lista, -5))
+lista_nombres = ["Alonso","Braulio","Cassie","Cron","Luis","Rodrigo","Rony","Zulema"]
+
+print(obtener_numero_deseado(lista_nombres, "Cron")) # Obtengo la posición 3
+print(obtener_numero_deseado(lista_nombres, "a")) # Obtengo None
